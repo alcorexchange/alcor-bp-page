@@ -1,11 +1,11 @@
 <template>
-  <div class="home-community-item card">
+  <NuxtLink class="home-community-item card" :to="to">
     <div class="image">
       <img :src="image" alt="" />
     </div>
     <div class="name">{{ name }}</div>
     <div class="about">{{ about }}</div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -13,6 +13,7 @@ const props = defineProps<{
   image: string;
   name: string;
   about: string;
+  to: string;
 }>();
 
 const image = useAsset(props.image);
@@ -28,6 +29,7 @@ const image = useAsset(props.image);
   align-items: center;
   transition: all var(--r-duration);
   cursor: pointer;
+  color: color(text);
   &:hover {
     transform: scale(1.04);
   }
