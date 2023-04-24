@@ -1,5 +1,5 @@
 <template>
-  <div class="gradient-hover">
+  <div class="gradient-hover card">
     <div class="image" v-if="image">
       <img :src="image" alt="" />
       <div class="image-overlay"></div>
@@ -27,11 +27,7 @@ const image = useAsset(props.image || "");
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: var(--r-space-4);
   gap: var(--r-space-4);
-  background: color(b3);
-  border: 1px solid color(border-color);
-  border-radius: var(--r-radius-2);
   cursor: pointer;
   overflow: hidden;
   transition: all var(--duration);

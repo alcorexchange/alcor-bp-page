@@ -15,5 +15,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--r-space-5);
+  border-radius: var(--r-radius-2);
 }
 </style>

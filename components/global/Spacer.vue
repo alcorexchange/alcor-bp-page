@@ -1,11 +1,12 @@
 <template>
-  <div :class="['spacer', size]"></div>
+  <div :class="['spacer', size]" :style="{ height: `${custom}px` }"></div>
 </template>
 
 <script lang="ts" setup>
 withDefaults(
   defineProps<{
     size?: "xlow" | "low" | "default" | "high" | "xhigh";
+    custom?: number | string;
   }>(),
   {
     size: "default",
