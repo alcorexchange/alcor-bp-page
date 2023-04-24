@@ -23,7 +23,9 @@ const menuItems = [
 .nav-bar {
   position: sticky;
   top: 0;
-  background-color: color(b1);
+  z-index: 80;
+  backdrop-filter: blur(14px);
+  background: color(b1, 0.01);
 }
 .main-inner {
   padding: var(--r-space-3);
