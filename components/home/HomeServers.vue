@@ -15,9 +15,9 @@
 import EffectLeft from "@/assets/images/effect-left.svg?component";
 import EffectRight from "@/assets/images/effect-right.svg?component";
 
-const items = Array.from({ length: 3 }, () => ({
+const items = Array.from({ length: 3 }, (_, i) => ({
   name: "Hetzner",
-  model: "AX101",
+  model: `AX101 (${i + 1})`,
   cpu: "AMD Ryzen™ 9 7950X3D",
   ram: "128 GB DDR5",
   disk: "2 x 1.92 TB NVMe SSD",
