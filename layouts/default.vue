@@ -2,6 +2,7 @@
   <div class="default-layout">
     <NavBar />
     <slot></slot>
+    <Footer />
   </div>
 </template>
 

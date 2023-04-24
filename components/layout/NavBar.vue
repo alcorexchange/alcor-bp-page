@@ -1,7 +1,9 @@
 <template>
   <nav class="nav-bar">
     <div class="main-inner">
-      <div class="logo">LOGO</div>
+      <div class="logo">
+        <AlcorLogo />
+      </div>
       <div class="nav-items">
         <NuxtLink class="item" v-for="item in menuItems" :to="item.to">{{ item.title }}</NuxtLink>
       </div>
@@ -11,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+import AlcorLogo from "@/assets/images/alcor-logo.svg?component";
 const menuItems = [
   { title: "Products", to: "/" },
   { title: "Servers", to: "/" },
@@ -32,6 +35,11 @@ const menuItems = [
   display: flex;
   & > * {
     flex: 1;
+  }
+  .logo {
+    img {
+      width: auto;
+    }
   }
   .nav-items {
     white-space: nowrap;
