@@ -7,5 +7,6 @@
     <HomeServers />
     <Spacer custom="128" />
     <HomeMission />
+    <Spacer custom="128" />
   </div>
 </template>
