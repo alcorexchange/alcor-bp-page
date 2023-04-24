@@ -42,4 +42,13 @@ const items = [
   gap: var(--r-space-5);
   border-radius: var(--r-radius-2);
 }
+
+@media only screen and (max-width: 880px) {
+  .items {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: auto;
+    padding: var(--r-space-2);
+  }
+}
 </style>

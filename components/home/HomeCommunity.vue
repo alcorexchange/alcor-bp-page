@@ -19,7 +19,7 @@ const items = [
 
 <style scoped lang="scss">
 .main-inner {
-  max-width: 740px;
+  max-width: 800px;
 }
 .items {
   display: flex;
@@ -28,6 +28,7 @@ const items = [
   gap: 32px;
 }
 .item {
-  min-width: 210px;
+  max-width: 240px;
+  width: 100%;
 }
 </style>

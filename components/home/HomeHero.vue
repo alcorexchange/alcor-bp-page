@@ -84,6 +84,7 @@ h1 {
   top: 0;
   right: 0;
   width: 100%;
+  pointer-events: none;
   .video {
     z-index: 2;
   }
@@ -107,6 +108,30 @@ h1 {
       right: 100px;
       background: color();
     }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .main-inner {
+    flex-direction: column-reverse;
+  }
+  .background {
+    position: relative;
+    justify-content: center;
+    video {
+      width: 100%;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-inner {
+    min-height: 100%;
+    margin-bottom: var(--r-space-5);
   }
 }
 </style>

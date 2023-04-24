@@ -3,7 +3,7 @@
     <div class="home-servers main-inner">
       <HomeSectionTitle> Servers </HomeSectionTitle>
       <div class="items">
-        <HomeServerItem v-for="item in items" v-bind="item" />
+        <HomeServerItem class="item" v-for="item in items" v-bind="item" />
       </div>
     </div>
     <EffectLeft class="effect effect-left" />
@@ -35,9 +35,10 @@ const items = Array.from({ length: 3 }, () => ({
   z-index: 4;
 }
 .items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--r-space-5);
+  justify-content: center;
 }
 .effect {
   position: absolute;
@@ -49,6 +50,12 @@ const items = Array.from({ length: 3 }, () => ({
   }
   &-right {
     right: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .item {
+    width: 100%;
   }
 }
 </style>
