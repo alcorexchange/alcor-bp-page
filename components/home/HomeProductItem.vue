@@ -1,14 +1,16 @@
 <template>
-  <GradientHover class="home-product-item" image="/images/product-image-2.png">
-    <div class="title">Alcor Markets</div>
+  <GradientHover class="home-product-item" :image="image">
+    <div class="title">{{ title }}</div>
     <Spacer size="low" />
-    <div class="description">Decentralized orderbook markets on WAX, EOS, Proton and Telos</div>
+    <div class="description">{{ description }}</div>
   </GradientHover>
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  image?: string;
+const props = defineProps<{
+  image: string;
+  title: string;
+  description: string;
 }>();
 </script>
 

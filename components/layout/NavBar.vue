@@ -1,24 +1,25 @@
 <template>
   <nav class="nav-bar">
     <div class="main-inner">
-      <div class="logo">
+      <div class="logo" @click="ScrollTo.scrollTo('body')">
         <AlcorLogo />
       </div>
       <div class="nav-items">
-        <NuxtLink class="item" v-for="item in menuItems" :to="item.to">{{ item.title }}</NuxtLink>
+        <div class="item" v-for="item in menuItems" @click="ScrollTo.scrollTo(item.to, { offset: -100 })">{{ item.title }}</div>
       </div>
-      <div class="actions"><AlcorButton fill>Go To Alcor</AlcorButton></div>
+      <div class="actions"><AlcorButton fill href="https://alcor.exchange">Go To Alcor</AlcorButton></div>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
 import AlcorLogo from "@/assets/images/alcor-logo.svg?component";
+import ScrollTo from "vue-scrollto";
 const menuItems = [
-  { title: "Products", to: "/" },
-  { title: "Servers", to: "/" },
-  { title: "Mission", to: "/" },
-  { title: "Community", to: "/" },
+  { title: "Products", to: ".home-products" },
+  { title: "Servers", to: ".home-servers-container" },
+  { title: "Mission", to: ".home-mission" },
+  { title: "Community", to: ".home-community" },
 ];
 </script>
 
@@ -37,9 +38,7 @@ const menuItems = [
     flex: 1;
   }
   .logo {
-    img {
-      width: auto;
-    }
+    cursor: pointer;
   }
   .nav-items {
     white-space: nowrap;
@@ -49,6 +48,7 @@ const menuItems = [
       color: color(text);
       padding: var(--r-normal-padding);
       transition: color var(--r-duration);
+      cursor: pointer;
       &:hover {
         color: color();
       }

@@ -8,8 +8,8 @@
         <Spacer />
         <div class="actions-container">
           <div class="actions">
-            <AlcorButton>See Products</AlcorButton>
-            <AlcorButton textStyle :fill="false" class="servers">
+            <AlcorButton @click="ScrollTo.scrollTo('.home-products', { offset: -100 })">See Products</AlcorButton>
+            <AlcorButton textStyle :fill="false" class="servers" @click="ScrollTo.scrollTo('.home-servers-container', { offset: -100 })">
               See Servers
               <template #icon>
                 <AlcorIcon name="server" class="icon" />
@@ -32,6 +32,10 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import ScrollTo from "vue-scrollto";
+</script>
 
 <style scoped lang="scss">
 .main-inner {
