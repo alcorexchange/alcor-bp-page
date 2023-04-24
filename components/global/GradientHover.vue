@@ -1,5 +1,5 @@
 <template>
-  <div class="gradient-hover card">
+  <component :is="tag || 'div'" class="gradient-hover card">
     <div class="image" v-if="image">
       <img :src="image" alt="" />
       <div class="image-overlay"></div>
@@ -11,12 +11,15 @@
     <div class="slot">
       <slot></slot>
     </div>
-  </div>
+  </component>
 </template>
 
 <script setup lang="ts">
+import { Component } from "vue";
+
 const props = defineProps<{
   image?: string;
+  tag?: Component;
 }>();
 const image = useAsset(props.image || "");
 </script>
@@ -31,6 +34,7 @@ const image = useAsset(props.image || "");
   cursor: pointer;
   overflow: hidden;
   transition: all var(--duration);
+  color: color(text);
   .image {
     height: 200px;
     position: relative;

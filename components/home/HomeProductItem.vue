@@ -1,5 +1,5 @@
 <template>
-  <GradientHover class="home-product-item" :image="image">
+  <GradientHover :tag="NuxtLink" :to="to" class="home-product-item" :image="image">
     <div class="title">{{ title }}</div>
     <Spacer size="low" />
     <div class="description">{{ description }}</div>
@@ -7,10 +7,12 @@
 </template>
 
 <script setup lang="ts">
+import { NuxtLink } from "#components";
 const props = defineProps<{
   image: string;
   title: string;
   description: string;
+  to: string;
 }>();
 </script>
 

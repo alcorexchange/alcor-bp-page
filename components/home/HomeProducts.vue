@@ -13,21 +13,25 @@ const items = [
     image: "/images/product-image-1.png",
     title: "Alcor Swap V2",
     description: "AMM model swapping  and Liquidity pools on WAX, EOS, Proton and Telos",
+    to: "https://alcor.exchange/swap",
   },
   {
     image: "/images/product-image-2.png",
     title: "Alcor Markets",
     description: "Decentralized orderbook markets on WAX, EOS, Proton and Telos",
+    to: "https://alcor.exchange/markets",
   },
   {
     image: "/images/product-image-3.png",
     title: "IBC Bridge",
     description: "Bridging assets between different chains on WAX, EOS, Telos and UX Network",
+    to: "https://alcor.exchange/bridge",
   },
   {
     image: "/images/product-image-4.png",
     title: "Alcor NFT Marketplace",
     description: "NFT Marketplace supporting Atomic Assets and Simple Assets on WAX",
+    to: "https://alcor.exchange/nft-market",
   },
 ];
 </script>
