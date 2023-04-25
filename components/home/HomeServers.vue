@@ -39,6 +39,9 @@ const items = Array.from({ length: 3 }, (_, i) => ({
   flex-wrap: wrap;
   gap: var(--r-space-5);
   justify-content: center;
+  .item {
+    flex: 1;
+  }
 }
 .effect {
   position: absolute;

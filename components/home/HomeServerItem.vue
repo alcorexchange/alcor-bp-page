@@ -66,7 +66,7 @@ const props = defineProps<{
     gap: var(--r-space-2);
   }
   .key {
-    font-size: var(--r-font-xlarge);
+    font-size: var(--r-font-large);
     font-weight: bold;
   }
   .value {

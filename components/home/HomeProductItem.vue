@@ -22,7 +22,7 @@ const props = defineProps<{
   font-weight: bold;
 }
 .description {
-  font-size: var(--r-font-xlarge);
+  font-size: var(--r-font-large);
   color: color(text-3);
 }
 </style>
