@@ -87,6 +87,10 @@ h1 {
   pointer-events: none;
   .video {
     z-index: 2;
+    padding-right: 200px;
+    video {
+      width: 280px;
+    }
   }
   .effects {
     z-index: 0;
@@ -118,8 +122,12 @@ h1 {
   .background {
     position: relative;
     justify-content: center;
-    video {
-      width: 100%;
+    .video {
+      padding: 0;
+      max-width: 200px;
+      video {
+        width: 100%;
+      }
     }
   }
 
