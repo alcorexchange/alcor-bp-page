@@ -61,8 +61,8 @@ h1 {
   font-size: var(--r-font-xxlarge);
 }
 .description {
-  font-size: var(--r-font-xlarge);
-  max-width: 640px;
+  font-size: var(--r-font-large);
+  max-width: 500px;
   color: color(text-4);
 }
 .actions-container {
