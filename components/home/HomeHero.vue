@@ -62,7 +62,8 @@ h1 {
 }
 .description {
   font-size: var(--r-font-xlarge);
-  max-width: 480px;
+  max-width: 640px;
+  color: color(text-4);
 }
 .actions-container {
   display: flex;
