@@ -4,12 +4,20 @@
       <div class="content">
         <h1>Welcome to Alcor’s Block Producer Page</h1>
         <Spacer size="low" />
-        <p class="description">Alcor is the most liquid DEX on WAX and a provider of UI for different tools.</p>
+        <p class="description">
+          The most liquid decentralized exchange on the WAX blockchain and also a user interface (UI) provider for
+          various tools.
+        </p>
         <Spacer />
         <div class="actions-container">
           <div class="actions">
             <AlcorButton @click="ScrollTo.scrollTo('.home-products', { offset: -100 })">See Products</AlcorButton>
-            <AlcorButton textStyle :fill="false" class="servers" @click="ScrollTo.scrollTo('.home-servers-container', { offset: -100 })">
+            <AlcorButton
+              textStyle
+              :fill="false"
+              class="servers"
+              @click="ScrollTo.scrollTo('.home-servers-container', { offset: -100 })"
+            >
               See Servers
               <template #icon>
                 <AlcorIcon name="server" class="icon" />
@@ -54,7 +62,7 @@ h1 {
 }
 .description {
   font-size: var(--r-font-xlarge);
-  max-width: 400px;
+  max-width: 480px;
 }
 .actions-container {
   display: flex;
