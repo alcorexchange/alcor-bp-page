@@ -1,7 +1,7 @@
 <template>
   <NuxtLink class="home-community-item card" :to="to">
     <div class="image">
-      <img :src="image" alt="" />
+      <Image />
     </div>
     <div class="name">{{ name }}</div>
     <div class="about">{{ about }}</div>
@@ -16,7 +16,7 @@ const props = defineProps<{
   to: string;
 }>();
 
-const image = useAsset(props.image);
+const Image = defineAsyncComponent(() => import(`../../assets/images/${props.image}.svg`));
 </script>
 
 <style scoped lang="scss">

@@ -9,11 +9,11 @@
 
 <script setup lang="ts">
 const items = [
-  { image: "/images/telegram.png", name: "Telegram", about: "Support & Trading Talks", to: "https://t.me/alcorexchange" },
-  { image: "/images/twitter.png", name: "Twitter", about: "Announcements", to: "https://twitter.com/alcorexchange" },
-  { image: "/images/medium.png", name: "Medium", about: "Information & News", to: "https://medium.com/@alcorexchange" },
-  { image: "/images/github.png", name: "Github", about: "Code & Contribution", to: "https://github.com/avral/alcor-ui" },
-  { image: "/images/api.png", name: "API", about: "Alcor API Docs", to: "https://docs.alcor.exchange/" },
+  { image: "telegram", name: "Telegram", about: "Support & Trading Talks", to: "https://t.me/alcorexchange" },
+  { image: "twitter", name: "Twitter", about: "Announcements", to: "https://twitter.com/alcorexchange" },
+  { image: "medium", name: "Medium", about: "Information & News", to: "https://medium.com/@alcorexchange" },
+  { image: "github", name: "Github", about: "Code & Contribution", to: "https://github.com/avral/alcor-ui" },
+  { image: "api", name: "API", about: "Alcor API Docs", to: "https://docs.alcor.exchange/" },
 ];
 </script>
 

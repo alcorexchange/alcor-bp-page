@@ -12,7 +12,7 @@
   justify-content: center;
   padding-bottom: var(--r-space-6);
   &-inner {
-    font-size: var(--r-font-xlarge);
+    font-size: var(--r-font-xxlarge);
     padding: var(--r-space-2);
     text-align: center;
     border-radius: 80px;
