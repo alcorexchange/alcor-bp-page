@@ -62,6 +62,22 @@
 				"chain-api",
 				"account-query"
 			]
+		},
+		{
+			"location": {
+				"name": "Finland",
+				"country": "FI",
+				"latitude": 60.1719,
+				"longitude": 24.9347
+			},
+			"node_type": "query",
+			"full": true,
+			"api_endpoint": "http://waxtest-hyperion.alcor.exchange",
+			"ssl_endpoint": "https://waxtest-hyperion.alcor.exchange",
+			"features": [
+				"hyperion-v2",
+				"history-v1"
+			]
 		}
 	]
 }
