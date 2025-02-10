@@ -54,6 +54,16 @@
         "latitude": 60.1719,
         "longitude": 24.9347
       },
+      "node_type": "seed",
+      "p2p_endpoint": "wax-p2p2.alcor.exchange:9876"
+    },
+    {
+      "location": {
+        "name": "Finland",
+        "country": "FI",
+        "latitude": 60.1719,
+        "longitude": 24.9347
+      },
       "node_type": "query",
       "full": false,
       "api_endpoint": "http://wax-api.alcor.exchange",
