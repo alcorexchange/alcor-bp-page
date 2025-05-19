@@ -95,7 +95,7 @@
         "longitude": 24.9347
       },
       "node_type": "query",
-      "full": true,
+      "full": false,
       "api_endpoint": "http://wax-hyperion.alcor.exchange",
       "ssl_endpoint": "https://wax-hyperion.alcor.exchange",
       "features": [
