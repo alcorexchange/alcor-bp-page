@@ -45,7 +45,7 @@
         "longitude": 24.9347
       },
       "node_type": "seed",
-      "p2p_endpoint": "telos-p2p.alcor.exchange:9876"
+      "p2p_endpoint": "telos-p2p.alcor.exchange:9881"
     },
     {
       "location": {
@@ -56,8 +56,8 @@
       },
       "node_type": "query",
       "full": false,
-      "api_endpoint": "http://telos-api.alcor.exchange",
-      "ssl_endpoint": "https://telos-api.alcor.exchange",
+      "api_endpoint": "http://telosmain-api.alcor.exchange",
+      "ssl_endpoint": "https://telosmain-api.alcor.exchange",
       "features": [
         "chain-api",
         "account-query"
