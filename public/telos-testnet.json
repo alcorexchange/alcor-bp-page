@@ -30,10 +30,10 @@
   "nodes": [
     {
       "location": {
-        "name": "Germany",
-        "country": "DE",
-        "latitude": 50.4779,
-        "longitude": 12.3713
+        "name": "Finland",
+        "country": "FI",
+        "latitude": 60.1719,
+        "longitude": 24.9347
       },
       "node_type": "producer"
     },
